@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../../src/index');
+const app = require('../../src');
 
 describe('E2E tests - scénario complet', () => {
     test('convert puis calculer TVA', async () => {

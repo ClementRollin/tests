@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../../src/index');
+const app = require('../../src');
 
 describe('Functional tests - API routes', () => {
     test('/convert route', async () => {
