@@ -31,8 +31,8 @@ Une application web full-stack pour les calculs financiers incluant la conversio
 
 ### 1. Cloner le projet
 ```bash
-git clone <url-du-repository>
-cd financial-services-app
+git clone https://github.com/ClementRollin/tests.git
+cd tests/Exercice\ 4\ -\ App/currency-service
 ```
 
 ### 2. Installation du backend
