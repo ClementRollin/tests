@@ -9,7 +9,19 @@
     "test:functional": "jest --selectProjects functional",
     "test:integration": "jest --selectProjects integration",
     "test:e2e": "jest --selectProjects e2e",
-    "coverage": "jest --coverage"
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:coverage:watch": "jest --coverage --watch"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!**/node_modules/**",
+      "!**/coverage/**"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageReporters": ["text", "lcov", "html"]
   },
   "keywords": [],
   "author": "",
@@ -20,6 +32,7 @@
     "express": "^5.1.0"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "cross-env": "^7.0.3",
     "jest": "^30.0.3",
     "nock": "^14.0.5",
